@@ -9,14 +9,14 @@
 </template>
 
 <script>
-    import Menu from 'components/menu';
+    import Menus from 'components/menu';
     export default {
         name: 'home',
         created: () => {
             //这里相当于ready 后执行函数
         },
         components: {
-            Menu
+            Menus
         },
         data() {
             return {
