@@ -40,6 +40,8 @@
 </template>
 
 <script>
+    import * as _ from 'lodash'; // 直接写名字，模块化的插件
+    require('lodash');// 方法二，这种事针对jquery插件的引入
     export default {
         name: 'menu',
         created:()=>{
