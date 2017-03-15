@@ -1,5 +1,5 @@
 <template>
-    <div id="menu" data-spm="1427" data-name="zc-nav" data-group="abs-mod" data-version="2.1.11" style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;">
+    <div class="menu" data-spm="1427" data-name="zc-nav" data-group="abs-mod" data-version="2.1.11" style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;">
         <div id="zhongchounav" style="">
             <div class="aa" style="">
                 <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; height: 56px; color: white; text-align: center; font-size: 13px;">
@@ -40,6 +40,8 @@
 </template>
 
 <script>
+    import * as _ from 'lodash'; // 直接写名字，模块化的插件
+    require('lodash');// 方法二，这种事针对jquery插件的引入
     export default {
         name: 'menu',
         created:()=>{
