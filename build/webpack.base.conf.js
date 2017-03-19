@@ -47,8 +47,8 @@ module.exports = {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: Object.assign(vueLoaderConfig, {
-          scss: 'vue-style-loader!css-loader!sass-loader',
-          sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax' // <style lang="sass">
+          scss: 'vue-style-loader!css-loader!sass-loader!style-loader',
+          sass: 'vue-style-loader!css-loader!sass-loader!style-loader?indentedSyntax' // <style lang="sass">
         })
       },
       {
