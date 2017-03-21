@@ -1,5 +1,14 @@
 <template>
     <div id="page-search">
+        <div style="width: 100%; height: 40px;">
+            <div class="searchBox" style="width: 375px; height: 40px; background-color: #efeceb;">
+                <div style="width:100%; height: 5px;"></div>
+                <div style="width: 94%; margin: 0 auto; height: 30px; background-color: #FFFFFF; border-radius: 15px;">
+                    <span class="searchIcon" style=""></span>
+                    <input class="searchInput" type="text" maxlength="20" autocomplete="off" value="" placeholder="爆品全场直降">
+                </div>
+            </div>
+        </div>
         <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;">
             <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;">
                 <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; height: 0px; background-color: white;"></div>
@@ -30,8 +39,11 @@
         name: 'page-search',
         components: { ItemOverview },
         data() {
-            return {items:new Array(10)}
+            return {items:new Array (10)}
         }
     }
 
 </script>
+<style scoped lang="scss">
+    @import './style.scss';
+</style>
