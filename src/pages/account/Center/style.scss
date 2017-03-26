@@ -1,0 +1,84 @@
+div{font-family: '微软雅黑', arial;}
+.user-head{
+    width: 375px;
+    background: url('../../../assets/user-bg.jpg') no-repeat left top;
+    background-size: 100% 100%;
+    display: block;
+}
+.avatar .header {
+    width: 90px;
+    height: 90px;
+}
+.bR50 {
+    border-radius: 50%;
+}
+.tC {
+    text-align: center;
+}
+.mT54 {
+    padding-top: 40px;
+}
+.mT10 {
+    margin-top: .44rem !important;
+}
+.fS22 {
+    font-size: 30px;
+    font-family: '微软雅黑', arial;
+}
+.cWhite {
+    color: #fff;
+}
+.mui-row {
+    width: 100%;
+    height: 30px;
+    padding:20px 0 10px 0;
+}
+.mui-col-xs-left{
+    width: 40%; 
+    float: left;
+    font-family: '微软雅黑', arial;
+    font-size: 0.24rem; 
+    text-align: left; 
+    margin-left: 10%;}
+.mui-col-xs-right{
+    width: 40%; 
+    float: right;
+    font-family: '微软雅黑', arial;
+    font-size: 0.24rem;
+    text-align: right; 
+    margin-right: 10%;
+}
+.mui-col-xs-12{width: 100%; padding: 3% 0;background: #242424; height: 36px;}
+.btnrecharge{    
+    background: #ff383b;
+    color: #fff;
+    border: 1px solid #ff383b;
+    float: right;
+    border-radius: 0.2rem;
+    height: 30px;
+    font-family: '微软雅黑', arial;
+    width: 20%;
+    float: right;
+    font-size: 16px;
+    margin-right: 10%;
+}
+.user-bill{
+    width: 50%;
+    font-family: '微软雅黑', arial; 
+    font-size: 18px; 
+    color: white; 
+    float: left;
+    margin-left: 10%;
+    line-height: 36px;
+}
+.fS12{border-bottom: 1px solid #fff;}
+.mui-row-1{height: 60px; padding: 10px 0;}
+.mui-col-xs-3{width: 25%; float: left;}
+.PagePdding{    
+    width: 375px;
+    height: 10px;
+    background: #F3F3F3;
+}
+
+
+
