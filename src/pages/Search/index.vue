@@ -1,5 +1,6 @@
 <template>
     <div id="page-search">
+        <ComHeader></ComHeader>
         <div style="width: 100%; height: 40px;">
             <div class="searchBox" style="width: 375px; height: 40px; background-color: #efeceb;">
                 <div style="width:100%; height: 5px;"></div>
@@ -34,12 +35,13 @@
 </template>
 
 <script>
-    import ItemOverview from './overview'
+    import ItemOverview from './overview';
+    import ComHeader from 'components/comHeader';
     export default {
         name: 'page-search',
-        components: { ItemOverview },
+        components: { ItemOverview, ComHeader },
         data() {
-            return {items:new Array (10)}
+            return { items: new Array(10) }
         }
     }
 

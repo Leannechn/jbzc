@@ -24,6 +24,7 @@
 <script>
     export default {
         name: 'page-redPack',
+        components:{},
         data() {
             return {}
         }
@@ -34,8 +35,14 @@
 <style scoped lang="css">
     body {
         overflow: hidden;
+        width:375px;
     }
-    
+    #page-redPack{
+        width:375px;
+    }
+    image{
+        width:375px;
+    }
     input {
         color: #fff;
         background: transparent;

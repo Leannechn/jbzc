@@ -48,7 +48,6 @@
             //这里相当于$().ready(function(params) {
                 //初始化
            // })
-           console.log($);
         },
         data() {
             return {}

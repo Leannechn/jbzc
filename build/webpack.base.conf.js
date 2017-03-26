@@ -28,7 +28,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.js', '.vue', '.json'],
+    extensions: ['.js', '.vue', '.json','.css'],
     modules: [
       resolve('src'),
       resolve('node_modules')
@@ -70,7 +70,8 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ['style-loader', 'css-loader?importLoaders=1']
+        use: ['style-loader', 'css-loader'],
+        include: [resolve('src'), resolve('test')]
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
