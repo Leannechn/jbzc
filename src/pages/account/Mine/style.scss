@@ -1,0 +1,47 @@
+div,p,span{font-family: '微软雅黑', arial; font-size: 14px;color: rgb(143, 143, 148);}
+.rechargeBtn{width: 375px;border-bottom: 1px solid #eee;height: 80px;}
+.rechargeOwn{
+    width: 40%;    
+    color: #FFFFFF !important;
+    background: #000;
+    float: left;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: '微软雅黑', arial; 
+}
+.rechargeFriend{
+    width: 40%;
+    color: #c6c6c6;
+    float: left;
+    height: 40px;
+    border-radius: 5px;
+    margin: 5%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: '微软雅黑', arial; 
+    background-color: #F0F0F0;
+}
+.btnInputAmt{
+    width:100%; margin-top: 8%; height: 40px;
+    background-color: #F0F0F0;
+    color: #c6c6c6;
+    border: none;
+    text-align:center;
+}
+.btnrecharge{width: 100%; margin-top: 4%; height: 40px;
+    color: #FFFFFF !important;
+    background: #000;
+    border: none;
+}
+.btnMemo{
+    width:100%; margin-top: 8%; height: 100px;
+    background-color: #F0F0F0;
+    color: #c6c6c6;
+    border: none;
+    text-align:left;
+}
