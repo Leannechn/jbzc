@@ -210,10 +210,10 @@
 </template>
 
 <script>
-    import Footer from 'components/footer2'
+    import Footer2 from 'components/footer2'
     export default {
         name: 'page-detail',
-        components:{Footer},
+        components:{Footer2},
         data() {
             return {}
         }
