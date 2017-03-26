@@ -5,7 +5,7 @@
                 <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0;">
                     <a style="text-decoration: none; display: flex; width: 375px; height: 125px; -webkit-box-orient: horizontal; flex-direction: row; -webkit-box-pack: justify; justify-content: space-between; position: relative;">
                         <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 125px; height: 125px;">
-                            <div isonce="1" style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; height: 122px; width: 125px; background-image: url( '//gw.alicdn.com/tfscom/TB1ksYHPVXXXXaNapXXXXXXXXXX_290x10000Q75.jpg '); background-size: cover; background-position: center center; background-repeat: no-repeat;"></div>
+                            <div isonce="1" class="searchItemImgDiv" style=""></div>
                         </div>
                         <div style="border-width: 0px 0px 1px; border-style: solid; border-color: black black rgb(241, 241, 241); position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 239px; height: 125px;">
                             <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; margin-top: 9.5px; height: 35px; width: 230px; overflow: hidden;"><span style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 14px; font-family:  'PingFang SC ',  'Helvetica Neue ', Helvetica, STHeiTi, sans-serif; width: 230px; line-height: 1.3; color: rgb(51, 51, 51);">初音未来众筹活动 正版周边首发 为您献礼</span></div>
@@ -42,3 +42,6 @@
     }
 
 </script>
+<style scoped lang="scss">
+    @import './style.scss';
+</style>
