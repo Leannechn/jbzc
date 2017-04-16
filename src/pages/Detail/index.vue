@@ -31,7 +31,7 @@
                 <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; height: 1px; width: 375px; background-color: rgb(224, 224, 224);"></div>
             </div>
             <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; width: 375px; background-color: rgb(255, 255, 255);">
-                <div style="border-width: 0px; border-style: solid; border-color: rgb(240, 240, 240) black black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: horizontal; flex-direction: row; align-content: flex-start; flex-shrink: 0; cursor: pointer; width: 375px; height: 44.9387px; -webkit-box-align: center; align-items: center; justify-content: space-between; -webkit-box-pack: justify;">
+                <div v-on:click="selectSpecification" style="border-width: 0px; border-style: solid; border-color: rgb(240, 240, 240) black black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: horizontal; flex-direction: row; align-content: flex-start; flex-shrink: 0; cursor: pointer; width: 375px; height: 44.9387px; -webkit-box-align: center; align-items: center; justify-content: space-between; -webkit-box-pack: justify;">
                     <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: horizontal; flex-direction: row; align-content: flex-start; flex-shrink: 0; height: 44.9387px; -webkit-box-align: center; align-items: center; margin-left: 12.256px;"><span style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 14.2987px; color: rgb(5, 27, 40);">众筹项目回报（4）</span></div>
                     <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: horizontal; flex-direction: row; align-content: flex-start; flex-shrink: 0; height: 44.9387px; -webkit-box-align: center; align-items: center; margin-right: 12.256px;"><span style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 16.3413px; color: rgb(0, 204, 204);">299</span><span
                             style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 12.256px; color: rgb(153, 153, 153); margin: 0px 4.08533px 0px 1.532px;">元支持</span><img
@@ -204,6 +204,9 @@
                     style="text-decoration: none; display: flex; -webkit-box-orient: horizontal; flex-direction: row; -webkit-box-align: center; align-items: center; width: 163.413px; height: 35.7467px; box-sizing: border-box; justify-content: center; -webkit-box-pack: center; border-radius: 17.8733px; border: 1px solid rgb(0, 204, 204);"><span style="border: 0px solid black; position: relative; box-sizing: border-box; display: block; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; font-size: 13.2773px; color: rgb(2, 205, 205);">更多“未来”  等你体验</span></a></div>
             <div style="border: 0px solid black; position: relative; box-sizing: border-box; display: flex; -webkit-box-orient: vertical; flex-direction: column; align-content: flex-start; flex-shrink: 0; height: 49.024px; width: 375px; background-color: rgb(240, 240, 240);"></div>
             <!-- empty -->
+            <div v-if="displaySpecification">
+                <Specification @close="selectSpecification(false,$event)" />
+            </div>
             <!-- empty -->
         </div>
         <Footer/>
@@ -213,12 +216,18 @@
 <script>
     import Footer2 from 'components/footer2';
     import ComHeader from 'components/comHeader';
+    import Specification from './Specification';
 
     export default {
         name: 'page-detail',
-        components: { Footer2, ComHeader },
+        components: { Footer2, ComHeader, Specification },
         data() {
-            return {}
+            return {
+                displaySpecification: false,
+                selectSpecification: (open) => {
+                    this.displaySpecification =  open === undefined? !this.displaySpecification:open;
+                }
+            }
         }
     }
 
